@@ -32,10 +32,11 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow uppercase font-semibold text-black">
+                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow uppercase font-semibold text-black ">
                             <li><Link>Home</Link></li>
                             <li><Link>All Products</Link></li>
                             <li><Link>Contact us</Link></li>
+                            <li><Link to='/login'>Login</Link></li>
                             {/* {user ? <>
                                 <button onClick={handleLogOut} className="btn btn-ghost">LogOut</button>
 
@@ -54,11 +55,11 @@ const Navbar = () => {
                     </h1>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 uppercase font-semibold">
+                    <ul className="menu menu-horizontal px-1 uppercase font-semibold text-xl">
                         <li><Link>Home</Link></li>
                         <li><Link>All Products</Link></li>
                         <li><Link>Contact us</Link></li>
-                        <li><Link>Login</Link></li>
+                        <li><Link to='/login'>Login</Link></li>
                         {/* {user ? <>
                             <button onClick={handleLogOut} className="btn btn-ghost">LogOut</button>
 

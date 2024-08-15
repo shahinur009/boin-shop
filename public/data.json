@@ -2,6 +2,7 @@
     {
         "productName": "Floral Maxi Dress",
         "productImage": "https://i.ibb.co/2hYwZpx/flowra-dress.jpg",
+        "brandName":"Easy",
         "description": "A beautiful floral maxi dress with a flowing silhouette and comfortable fit.",
         "price": 49.99,
         "category": "Dresses",
@@ -10,6 +11,7 @@
     },
     {
         "productName": "Leather Handbag",
+        "brandName":"Akij",
         "productImage": "https://i.ibb.co/CnpRFxd/Leather-Handbag.jpg",
         "description": "Elegant leather handbag with multiple compartments for everyday use.",
         "price": 89.99,
@@ -19,6 +21,7 @@
     },
     {
         "productName": "Classic Pearl Necklace",
+        "brandName":"Apon",
         "productImage": "https://i.ibb.co/zNQ7L3x/Classic-Pearl-Necklace.jpg",
         "description": "A timeless pearl necklace perfect for special occasions.",
         "price": 129.99,
@@ -28,6 +31,7 @@
     },
     {
         "productName": "Silk Scarf",
+        "brandName":"Easy",
         "productImage": "https://i.ibb.co/d5y1b2H/Silk-Scarf.jpg",
         "description": "Luxurious silk scarf with a vibrant pattern to add a pop of color to any outfit.",
         "price": 34.99,
@@ -37,6 +41,7 @@
     },
     {
         "productName": "Ankle Boots",
+        "brandName":"Apex",
         "productImage": "https://i.ibb.co/JcFLH9y/Ankle-Boots.jpg",
         "description": "Stylish ankle boots made from high-quality leather.",
         "price": 75.00,
@@ -46,6 +51,7 @@
     },
     {
         "productName": "Denim Jacket",
+        "brandName":"Demin",
         "productImage": "https://i.ibb.co/F4h9vVY/Denim-Jacket.jpg",
         "description": "Classic denim jacket with a modern fit, perfect for layering.",
         "price": 59.99,
@@ -55,6 +61,7 @@
     },
     {
         "productName": "Sunglasses",
+        "brandName":"Akij",
         "productImage": "https://i.ibb.co/bJ4hPKS/Sunglasses.jpg",
         "description": "Chic sunglasses with UV protection and a stylish frame.",
         "price": 19.99,
@@ -64,6 +71,7 @@
     },
     {
         "productName": "Evening Gown",
+        "brandName":"Easy",
         "productImage": "https://i.ibb.co/TRDqnS5/Evening-Gown.jpg",
         "description": "Elegant evening gown with a flattering silhouette and exquisite detailing.",
         "price": 199.99,
@@ -73,6 +81,7 @@
     },
     {
         "productName": "Workout Leggings",
+        "brandName":"Easy",
         "productImage": "https://i.ibb.co/tcFbz27/Workout-Leggings.jpg",
         "description": "Comfortable and durable workout leggings for an active lifestyle.",
         "price": 29.99,
@@ -82,6 +91,7 @@
     },
     {
         "productName": "Wool Coat",
+        "brandName":"Easy",
         "productImage": "https://i.ibb.co/56MdPQC/Wool-Coat.jpg",
         "description": "Warm and stylish wool coat for the colder months.",
         "price": 139.99,
@@ -91,6 +101,7 @@
     },
     {
         "productName": "Running Shoes",
+        "brandName":"Apex",
         "productImage": "https://i.ibb.co/Ny8KqvD/Running-Shoes.jpg",
         "description": "Lightweight and supportive running shoes for daily exercise.",
         "price": 64.99,
@@ -100,6 +111,7 @@
     },
     {
         "productName": "Cotton T-Shirt",
+        "brandName":"Easy",
         "productImage": "https://i.ibb.co/y8BH1yd/Cotton-T-Shirt.jpg",
         "description": "Soft cotton t-shirt with a comfortable fit, available in various colors.",
         "price": 14.99,
@@ -109,6 +121,7 @@
     },
     {
         "productName": "Leather Belt",
+        "brandName":"Akij",
         "productImage": "https://i.ibb.co/M7vwGz3/Leather-Belt.jpg",
         "description": "Classic leather belt with a metal buckle, suitable for any outfit.",
         "price": 24.99,
@@ -118,6 +131,7 @@
     },
     {
         "productName": "Lace Blouse",
+        "brandName":"Easy",
         "productImage": "https://i.ibb.co/HrRR1bG/Lace-Blouse.jpg",
         "description": "Delicate lace blouse perfect for both casual and formal occasions.",
         "price": 39.99,
@@ -127,6 +141,7 @@
     },
     {
         "productName": "Gold Hoop Earrings",
+        "brandName":"Apon",
         "productImage": "https://i.ibb.co/2g5sGqW/Gold-Hoop-Earrings.jpg",
         "description": "Classic gold hoop earrings that complement any outfit.",
         "price": 59.99,
@@ -136,6 +151,7 @@
     },
     {
         "productName": "Silk Blouse",
+        "brandName":"Easy",
         "productImage": "https://i.ibb.co/wdgsPRc/Silk-Blouse.jpg",
         "description": "Elegant silk blouse that adds a touch of sophistication to your wardrobe.",
         "price": 69.99,
@@ -145,6 +161,7 @@
     },
     {
         "productName": "High-Waisted Jeans",
+        "brandName":"Demin",
         "productImage": "https://i.ibb.co/D5bMmhm/High-Waisted-Jeans.jpg",
         "description": "Flattering high-waisted jeans with a comfortable stretch.",
         "price": 49.99,
@@ -154,6 +171,7 @@
     },
     {
         "productName": "Woolen Scarf",
+        "brandName":"Easy",
         "productImage": "https://i.ibb.co/54Qvpb9/Woolen-Scarf.jpg",
         "description": "Warm woolen scarf available in various colors.",
         "price": 29.99,
@@ -163,6 +181,7 @@
     },
     {
         "productName": "Cotton Pajama Set",
+        "brandName":"Easy",
         "productImage": "https://i.ibb.co/cy66kjD/Cotton-Pajama-Set.webp",
         "description": "Comfortable cotton pajama set for a good night's sleep.",
         "price": 34.99,
@@ -172,6 +191,7 @@
     },
     {
         "productName": "Sun Hat",
+        "brandName":"Akij",
         "productImage": "https://i.ibb.co/F7GvCb1/Sun-Hat.jpg",
         "description": "Wide-brimmed sun hat to keep you protected from the sun.",
         "price": 19.99,
@@ -181,6 +201,7 @@
     },
     {
         "productName": "Cashmere Sweater",
+        "brandName":"Demin",
         "productImage": "https://i.ibb.co/sggvbTv/Cashmere-Sweater.jpg",
         "description": "Luxurious cashmere sweater that's soft and warm.",
         "price": 129.99,
@@ -190,6 +211,7 @@
     },
     {
         "productName": "Evening Clutch",
+        "brandName":"Easy",
         "productImage": "https://i.ibb.co/Brft3sv/Evening-Clutch.webp",
         "description": "Elegant evening clutch with a metallic finish.",
         "price": 49.99,
@@ -199,6 +221,7 @@
     },
     {
         "productName": "Silk Pajamas",
+        "brandName":"Easy",
         "productImage": "https://i.ibb.co/KrycV7p/Silk-Pajamas.jpg",
         "description": "Luxurious silk pajamas for a comfortable night's sleep.",
         "price": 89.99,
@@ -208,6 +231,7 @@
     },
     {
         "productName": "Strappy Sandals",
+        "brandName":"Apex",
         "productImage": "https://i.ibb.co/r3VWr1N/Strappy-Sandals.jpg",
         "description": "Stylish strappy sandals perfect for summer outings.",
         "price": 39.99,
@@ -217,6 +241,7 @@
     },
     {
         "productName": "Trench Coat",
+        "brandName":"Easy",
         "productImage": "https://i.ibb.co/hYdBRX6/Trench-Coat.webp",
         "description": "Classic trench coat with a modern fit.",
         "price": 119.99,
@@ -226,6 +251,7 @@
     },
     {
         "productName": "Ankle-Length Leggings",
+        "brandName":"Demin",
         "productImage": "https://i.ibb.co/mCsc0Mk/Ankle-Length-Leggings.jpg",
         "description": "Comfortable ankle-length leggings with a snug fit.",
         "price": 29.99,
@@ -235,6 +261,7 @@
     },
     {
         "productName": "Velvet Dress",
+        "brandName":"Easy",
         "productImage": "https://i.ibb.co/vJcxVDy/Velvet-Dress.webp",
         "description": "Luxurious velvet dress perfect for evening wear.",
         "price": 99.99,
@@ -244,6 +271,7 @@
     },
     {
         "productName": "Diamond Stud Earrings",
+        "brandName":"Apon",
         "productImage": "https://i.ibb.co/gMVkZcK/Diamond-Stud-Earrings.jpg",
         "description": "Elegant diamond stud earrings for a touch of luxury.",
         "price": 299.99,
@@ -253,6 +281,7 @@
     },
     {
         "productName": "Crossbody Bag",
+        "brandName":"Akij",
         "productImage": "https://i.ibb.co/1bgLFpW/Crossbody-Bag.jpg",
         "description": "Convenient and stylish crossbody bag for daily use.",
         "price": 49.99,
@@ -262,6 +291,7 @@
     },
     {
         "productName": "Wool Beret",
+        "brandName":"Akij",
         "productImage": "https://i.ibb.co/JQWRDx7/Wool-Beret.jpg",
         "description": "Chic wool beret that adds a Parisian touch to any outfit.",
         "price": 24.99,
@@ -271,6 +301,7 @@
     },
     {
         "productName": "Polka Dot Dress",
+        "brandName":"Easy",
         "productImage": "https://i.ibb.co/NnsT2Zv/Polka-Dot-Dress.jpg",
         "description": "Playful polka dot dress with a flattering fit.",
         "price": 54.99,
@@ -280,6 +311,7 @@
     },
     {
         "productName": "Leather Ankle Boots",
+        "brandName":"Apex",
         "productImage": "https://i.ibb.co/sFcgpw9/Leather-Ankle-Boots.jpg",
         "description": "Durable leather ankle boots for everyday wear.",
         "price": 84.99,
@@ -289,6 +321,7 @@
     },
     {
         "productName": "Cotton Blouse",
+        "brandName":"Easy",
         "productImage": "https://i.ibb.co/68QPCN8/Cotton-Blouse.webp",
         "description": "Light and airy cotton blouse for a casual look.",
         "price": 34.99,
@@ -298,6 +331,7 @@
     },
     {
         "productName": "Pencil Skirt",
+        "brandName":"Easy",
         "productImage": "https://i.ibb.co/MZTgKwT/Pencil-Skirt.webp",
         "description": "Elegant pencil skirt with a slimming fit.",
         "price": 39.99,
@@ -307,6 +341,7 @@
     },
     {
         "productName": "Linen Pants",
+        "brandName":"Easy",
         "productImage": "https://i.ibb.co/s5J3HMJ/Linen-Pants.jpg",
         "description": "Comfortable linen pants perfect for warm weather.",
         "price": 49.99,
@@ -316,6 +351,7 @@
     },
     {
         "productName": "Cashmere Shawl",
+        "brandName":"Easy",
         "productImage": "https://i.ibb.co/GpBfDsr/Cashmere-Shawl.webp",
         "description": "Luxurious cashmere shawl that's soft and warm.",
         "price": 79.99,
@@ -325,6 +361,7 @@
     },
     {
         "productName": "Velvet Blazer",
+        "brandName":"Demin",
         "productImage": "https://i.ibb.co/XyjBPLZ/Velvet-Blazer.jpg",
         "description": "Stylish velvet blazer for formal occasions.",
         "price": 149.99,
@@ -334,6 +371,7 @@
     },
     {
         "productName": "Suede Ankle Boots",
+        "brandName":"Apex",
         "productImage": "https://i.ibb.co/gWKwQ8g/Suede-Ankle-Boots.jpg",
         "description": "Soft suede ankle boots for a stylish look.",
         "price": 89.99,
@@ -343,6 +381,7 @@
     },
     {
         "productName": "Knit Cardigan",
+        "brandName":"Easy",
         "productImage": "https://i.ibb.co/5M9S93X/Knit-Cardigan.jpg",
         "description": "Cozy knit cardigan with a relaxed fit, perfect for layering.",
         "price": 59.99,
@@ -352,6 +391,7 @@
       },
       {
         "productName": "Silk Wrap Dress",
+        "brandName":"Easy",
         "productImage": "https://i.ibb.co/Ln9RXQq/Silk-Wrap-Dress.jpg",
         "description": "Elegant silk wrap dress with a flattering waist tie.",
         "price": 149.99,
@@ -361,6 +401,7 @@
       },
       {
         "productName": "Leather Tote Bag",
+        "brandName":"Akij",
         "productImage": "https://i.ibb.co/ThHvGY2/Leather-Tote-Bag.jpg",
         "description": "Spacious leather tote bag for everyday essentials.",
         "price": 99.99,

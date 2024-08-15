@@ -5,6 +5,8 @@ import {
 import Error from "../components/Error";
 import Products from "../Pages/Products/Products";
 import Layout from "../layout/layout";
+import Login from "../Pages/login/login";
+import Register from "../Pages/register/Register";
 
 export const router = createBrowserRouter([
     {
@@ -16,10 +18,14 @@ export const router = createBrowserRouter([
                 path: '/',
                 element: <Products />
             },
-            // {
-            //     path:'/login',
-            //     element:
-            // }
+            {
+                path:'/login',
+                element:<Login></Login>
+            },
+            {
+                path:'/register',
+                element:<Register></Register>
+            }
         ]
     },
 ]);

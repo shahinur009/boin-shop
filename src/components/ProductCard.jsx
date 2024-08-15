@@ -1,6 +1,6 @@
 
 const ProductCard = ({ item }) => {
-    const { productName, productImage, description, price, category, ratings, creationDateTime } = item
+    const { productName, productImage, description, price, category, ratings, creationDateTime, brandName } = item
     return (
         <div>
             <div className="card bg-base-100 md:w-96 card-compact shadow-xl min-h-screen   ">
@@ -16,6 +16,7 @@ const ProductCard = ({ item }) => {
                     </h2>
                     <p>{description}</p>
                     <div className="card-actions justify-center">
+                        <div className="badge badge-outline">Brand: {brandName}</div>
                         <div className="badge badge-outline">Price: {price}</div>
                         <div className="badge badge-outline">Category: {category}</div>
                         <div className="badge badge-outline">Posting Date:{creationDateTime}</div>
