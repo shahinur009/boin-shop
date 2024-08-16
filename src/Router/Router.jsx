@@ -16,15 +16,16 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <Products />
+                element: <Products />,
+                loader: () => fetch('http://localhost:5000/productCount')
             },
             {
-                path:'/login',
-                element:<Login></Login>
+                path: '/login',
+                element: <Login></Login>
             },
             {
-                path:'/register',
-                element:<Register></Register>
+                path: '/register',
+                element: <Register></Register>
             }
         ]
     },

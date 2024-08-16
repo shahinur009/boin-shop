@@ -1,21 +1,49 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FcGoogle } from 'react-icons/fc';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import logo from '../../../public/logo.png';
+import { AuthContext } from '../../Router/AuthProvider';
+import Swal from 'sweetalert2';
+import GoogleLogin from '../../components/GoogleLogin';
 
 const Login = () => {
+    const { signIn } = useContext(AuthContext)
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    const handleLogin = event => {
+        event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        // const data = { email, password };
+        // console.log(email, password)
+        signIn(email, password)
+            .then(result => {
+                const user = result.user;
+                navigate(location?.state ? location.state : '/')
+                // console.log(user)
+                Swal.fire({
+                    position: "top-center",
+                    icon: "success",
+                    title: "Log in successful",
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            })
+    }
     return (
         <>
-            <div className="md:flex justify-center items-center gap-10 rounded-md border-2 shadow-md p-5">
+            <div className="md:flex justify-center items-center gap-10 rounded-md border-2 shadow-md p-5 bg-pink-900">
                 <div>
                     <img src={logo} alt="logo picture" className="rounded-full" />
                 </div>
-                <div className="w-full max-w-md p-5 space-y-3 rounded-xl dark:bg-gray-50 dark:text-gray-800 shadow-xl">
+                <div className="w-full max-w-md p-5 space-y-3 rounded-xl  bg-pink-400 shadow-xl">
                     <h1 className="text-2xl font-bold text-center uppercase">Login Form</h1>
-                    <form noValidate="" action="" className="space-y-6">
+                    <form onSubmit={handleLogin} noValidate="" action="" className="space-y-6">
                         <div className="space-y-1 text-sm">
-                            <label htmlFor="username" className="block dark:text-gray-600">Username</label>
-                            <input type="text" name="username" id="username" placeholder="Username" className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600 outline" />
+                            <label htmlFor="email" className="block dark:text-gray-600">Email</label>
+                            <input type="text" name="email" id="email" placeholder="email" className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600 outline" />
                         </div>
                         <div className="space-y-1 text-sm">
                             <label htmlFor="password" className="block dark:text-gray-600">Password</label>
@@ -32,9 +60,7 @@ const Login = () => {
                         <div className="flex-1 h-px sm:w-16 dark:bg-gray-300"></div>
                     </div>
                     <div className="flex justify-center space-x-4">
-                        <button aria-label="Log in with Google" className="p-3 rounded-sm">
-                            <FcGoogle className='text-4xl' />
-                        </button>
+                        <GoogleLogin></GoogleLogin>
                     </div>
                     <p className="text-xs text-center sm:px-6 dark:text-gray-600">Don't have an account?
                         <Link to='/register' rel="noopener noreferrer" href="#" className="underline dark:text-gray-800"> Register</Link>

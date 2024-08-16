@@ -1,14 +1,25 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from '../../public/logo.png'
+import { useContext } from "react";
+import { AuthContext } from "../Router/AuthProvider";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
+    const { user, logOut } = useContext(AuthContext)
 
-    // const handleLogOut = () => {
-    //     logOut()
-    //         .then(() => { })
-    //         .catch(error => console.log(error))
+    const handleLogOut = () => {
+        logOut()
+            .then(() => { })
+            .catch(error => console.log(error))
+        Swal.fire({
+            position: "top-center",
+            icon: "success",
+            title: "Log out successful",
+            showConfirmButton: false,
+            timer: 1500
+        });
 
-    // }
+    }
 
 
     return (
@@ -36,15 +47,9 @@ const Navbar = () => {
                             <li><Link>Home</Link></li>
                             <li><Link>All Products</Link></li>
                             <li><Link>Contact us</Link></li>
-                            <li><Link to='/login'>Login</Link></li>
-                            {/* {user ? <>
-                                <button onClick={handleLogOut} className="btn btn-ghost">LogOut</button>
-
-                            </>
-
-                                : <><li><Link to='/login'>Login</Link></li></>} */}
                         </ul>
                     </div>
+                    
                     <div className="hidden md:block">
                         <Link to='/'>
                             <img src={logo} alt="" className="h-20 w-48 blur-0" />
@@ -55,18 +60,36 @@ const Navbar = () => {
                     </h1>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 uppercase font-semibold text-xl">
+                    <ul className="menu menu-horizontal px-1 uppercase font-semibold">
                         <li><Link>Home</Link></li>
                         <li><Link>All Products</Link></li>
                         <li><Link>Contact us</Link></li>
-                        <li><Link to='/login'>Login</Link></li>
-                        {/* {user ? <>
-                            <button onClick={handleLogOut} className="btn btn-ghost">LogOut</button>
-
-                        </>
-
-                            : <><li><Link to='/login'>Login</Link></li></>} */}
                     </ul>
+                </div>
+                <div className="navbar-end text-pink-500">
+                    {
+                        user?.email ? <div className="dropdown dropdown-end" title={user?.displayName}>
+                            <label tabIndex={0} className="avatar">
+                                <div className="w-12 rounded-full">
+                                    <img src={user?.photoURL || "https://i.ibb.co/s5c4Ncx/tshahinur-islam.jpg"} />
+                                </div>
+                            </label>
+                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-4 z-[999] relative p-3 shadow bg-base-200 rounded-box w-48">
+                                <li>
+                                    <button className="btn btn-sm  btn-ghost">{user?.displayName || 'user name not found'}</button>
+
+                                </li>
+                                <li>
+                                    <button
+                                        onClick={logOut}
+                                        className="btn btn-sm  btn-ghost">Logout</button>
+
+                                </li>
+                            </ul>
+                        </div>
+                            :
+                            <NavLink to='/login' className="btn">Login</NavLink>
+                    }
                 </div>
             </div>
         </>
