@@ -1,8 +1,16 @@
-# React + Vite
+Project Clone and Setup:
+1. Clone project as per zip file or clone repository as per manually as per     link: git clone https://github.com/shahinur009/boin-shop.git
+2. In terminal install: react-router-dom, firebase, react-hook-form, sweetalert2, react-icons, react-toastify, tailwind-css, daisy-ui.
+3. Create a .env file and set here and update there firebase configuration to your own firebase app install .
+4. Then command in terminal 'npm run dev'.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Outline:
+1. Navbar
+2. All products
+3. search functions
+4. sort functions
+5. filter functions
+6. footer
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+github link: https://github.com/shahinur009/boin-shop
+Live Link: 
