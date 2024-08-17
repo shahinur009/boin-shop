@@ -16,13 +16,10 @@ const Login = () => {
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
-        // const data = { email, password };
-        // console.log(email, password)
         signIn(email, password)
             .then(result => {
                 const user = result.user;
                 navigate(location?.state ? location.state : '/')
-                // console.log(user)
                 Swal.fire({
                     position: "top-center",
                     icon: "success",

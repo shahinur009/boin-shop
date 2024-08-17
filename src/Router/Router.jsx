@@ -17,7 +17,7 @@ export const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Products />,
-                loader: () => fetch('http://localhost:5000/productCount')
+                loader: () => fetch('https://boin-shop-server.vercel.app/productCount')
             },
             {
                 path: '/login',

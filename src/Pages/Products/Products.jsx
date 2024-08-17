@@ -24,7 +24,7 @@ const Products = () => {
     useEffect(() => {
         const fetchBrandsAndCategories = async () => {
             try {
-                const response = await fetch('http://localhost:5000/products');
+                const response = await fetch('https://boin-shop-server.vercel.app/products');
                 const data = await response.json();
 
                 const uniqueBrands = [...new Set(data.map(item => item.brandName))];
@@ -67,7 +67,7 @@ const Products = () => {
                 const categoryQuery = category ? `&category=${category}` : '';
                 const priceQuery = (minPrice && maxPrice) ? `&minPrice=${minPrice}&maxPrice=${maxPrice}` : '';
 
-                const response = await fetch(`http://localhost:5000/products?page=${currentPage}&size=${itemsPerPage}&${sortQuery}${searchQuery}${brandQuery}${categoryQuery}${priceQuery}`);
+                const response = await fetch(`https://boin-shop-server.vercel.app/products?page=${currentPage}&size=${itemsPerPage}&${sortQuery}${searchQuery}${brandQuery}${categoryQuery}${priceQuery}`);
                 const data = await response.json();
 
                 setProduct(data);

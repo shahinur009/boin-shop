@@ -11,20 +11,11 @@ const GoogleLogin = () => {
     const handleGoogleSignIn = () => {
         googleSignIn()
             .then(result => {
-                console.log(result?.user)
+                // console.log(result?.user)
                 const userInfo = {
                     email: user?.email,
                     name: user?.displayName
                 }
-                // fetch('http://localhost:5000/users', {
-                //     method: 'POST',
-                //     body: JSON.stringify(data),
-                //     headers: {
-                //         "Context-type": "application/json"
-                //     }
-                //         .then(res => res.json())
-                //         .then(data => console.log(data))
-                // })
                 navigate(location?.state ? location.state : '/')
             })
     }
