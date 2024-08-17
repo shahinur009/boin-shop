@@ -3,7 +3,7 @@ const ProductCard = ({ item }) => {
     const { productName, productImage, description, price, category, ratings, creationDateTime, brandName } = item
     return (
         <>
-            <div className="max-w-sm p-6 rounded-md shadow-md dark:bg-gray-50 dark:text-gray-900">
+            <div className="max-w-sm p-6 rounded-md bg-pink-200">
                 <img src={productImage} alt="" className="object-cover object-center w-full rounded-md h-72 overflow-hidden transition-transform duration-300 hover:scale-105" />
                 <div className="mt-6 mb-2">
                     <div className="flex justify-between">
